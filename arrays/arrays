@@ -1,0 +1,89 @@
+// ARRAYS
+
+
+
+//indexes :      0      1       2
+// (Arrays) let learners = [24,    'Jade',  true]
+// learners[0]
+
+
+// // console.log(learners.length)
+// console.log(learners[3][0])
+
+//PUSH method- adds one part of the array at the end.
+// learners.push('4')
+// learners.push(false)
+// learners.push(100)
+
+// //POP method- removes one part of the array at the end.
+// learners.pop()
+
+
+
+// //SHIFT method- removes a part of the array from the front
+// learners.shift ()
+
+
+//UNSHIFT method- adds a part of the array at the front. 
+// learners.unshift
+
+// let learners =['kristy, Nathan, Ronald]
+// let learners2 =['Jade', 'Rixio' 'Teo']
+
+// //Spread opeartor
+// let everybody = [. . . learners, . . .learners2]
+
+// console.log(everybody)
+
+
+//Rest parameters
+
+
+// function add(...numbers) {
+   //first index is always 0
+   //last index is always length of aaray -1
+
+   
+   
+//     console.log(numbers)
+
+// }
+
+// add(4,5,6,10,100,50 )
+
+
+assignment
+example 1-
+
+function maxOfTwoNumbers(num1, num2){
+ if(num1>=num2){
+    return num1
+} else {return num2}
+}
+ console.log(maxOfTwoNumbers(0,1))
+
+ example 2-
+function maxOfThree(num1, num2, num3){
+    if(num1>=num2 && num1>=num3){
+     return num1
+    }else if (num2 >= num1 && num2 >= num3){
+     return num2
+    }else if (num3 >=num1 && num3 >=num2){
+        return num3
+    }
+ }
+     console.log(maxOfThree(5,6,7))
+
+//example 3- 
+function isCharAVowel (string){
+    if (string == 'A' || string == 'E' || string == 'I' || string == "O" ||
+   string =='U') {
+     return true;
+   } else {
+    return false;
+   }
+}
+console.log (isCharAVowel('T'))
+
+//example 4- 
+const sumArray
