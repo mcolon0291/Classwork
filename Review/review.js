@@ -129,12 +129,101 @@
 // randomThings[2] = 'World'
 // console.log(randomThings)
 
-const ourClass = ['Slaty', 'Zoom', 'Sardine', 'Slack', 'Github']
-// D1- ourClass[3]
-// D2- 
-// ourClass[4] = 'Octocat'
-// console.log(ourClass)
+// const ourClass = ['Slaty', 'Zoom', 'Sardine', 'Slack', 'Github']
+// // D1- ourClass[3]
+// // D2- 
+// // ourClass[4] = 'Octocat'
+// // console.log(ourClass)
 
-// D3-
- ourClass.push('Cloud City')
- console.log(ourClass)
+// // D3-
+//  ourClass.push('Cloud City')
+//  console.log(ourClass)
+
+//E1-E5
+// const myArray = [5, 10, 500, 20]
+// myArray.push('Aegon', 'music')
+// myArray.shift()
+// myArray.unshift('Bob Marley')
+// myArray.pop()
+// myArray.reverse()
+// yes, the array was mutated. Mutate means to change the original structure. yes, it returned the original array backwards.
+
+
+// F1- F2
+// let number = 95
+// if (number < 100){
+//     console.log('little number')
+// }
+// else {
+//     console.log('big number')
+// }
+
+// G1- G3
+// let number = 11
+// if (number < 5){
+//     console.log('little number')
+// } else if (number > 10){
+//     console.log('big number')
+// } else {
+//     console.log('monkey')
+// }
+
+
+
+// const kristynsCloset = [
+//     "left shoe",
+//     "cowboy boots",
+//     "right sock",
+//     "GA hoodie",
+//     "green pants",
+//     "yellow knit hat",
+//     "marshmallow peeps"
+//   ];
+  
+//   // Thom's closet is more complicated. Check out this nested data structure!!
+//   const thomsCloset = [
+//     [
+//       // These are Thom's shirts
+//       "grey button-up",
+//       "dark grey button-up",
+//       "light blue button-up",
+//       "blue button-up",
+//     ],[
+//       // These are Thom's pants
+//       "grey jeans",
+//       "jeans",
+//       "PJs"
+//     ],[
+//       // Thom's accessories
+//       "wool mittens",
+//       "wool scarf",
+//       "raybans"
+//     ]
+  
+
+
+//H1 
+// console.log('Kristyn is rocking that ' + kristynsCloset[2] + ' today!');
+// H2- 
+// kristynsCloset.splice(6,0,'raybans');
+// console.log(kristynsCloset)
+// //H3- 
+// kristynsCloset[5] = 'stained knit hat'
+// console.log(kristynsCloset)
+// H4- console.log(thomsCloset[0][0])
+//H5- 
+// console.log(thomsCloset[1][1])
+// H6-
+// console.log(thomsCloset[2][1])
+//H7- 
+// console.log('Thom is looking fierce in a ' + thomsCloset[0][0] + ', ' + thomsCloset[1][1] + ' and ' + thomsCloset [2][1] + '!');
+// H8-
+// thomsCloset[1][2] = 'footie pajamas'
+// console.log(thomsCloset)
+
+// IV-functions
+// A- 
+function printGreeting(name) {
+    return "Hello there,  " + name + " !";}
+    console.log(printGreeting('Mamdouh'));
+    
