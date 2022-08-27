@@ -85,55 +85,55 @@
   
 //   console.log('\n')
   
-// //   const lucy = new Cat('Lucy', 6, 'Female')
-// //   console.log(lucy)
-// //   lucy.eat()
-// //   lucy.birthday()
-// //   lucy.takesNap()
-  
-// //   console.log('\n')
-  
-
-// //example 2
-// class Pirate {
-//     constructor(name, power, secretWeapon) {
-//     this.name = name
-//     this.power = power
-//     this.secretWeapon = secretWeapon
-//     this.takesSoul = false
-//     }
-  
-//     getsHit() {
-//     console.log(
-//     `${this.name} was just hit and their power is ${(this.power -= 10)}`
-//       )
-//     }
-  
-//     powerUp() {
-//     console.log(`${this.name} just powered up to ${(this.power += 10)}`)
-//     }
-  
-//     soulSnatched() {
-//     this.takesSoul = true
-//     console.log(`${this.takesSoul && "Just took someone's soul"}`)
-//     }
-//   }
-  
-//   const jollyRoger = [
-//     new Pirate('Jax The Ripper', 100, 'Machete with poison'),
-//     new Pirate('Wave Crasher', 90, 'Controller of water'),
-//     new Pirate('Crazy Pirate', 93, 'Paralizes with his thoughts'),
-//   ]
-  
-//   jollyRoger[0].powerUp()
-  
-//   jollyRoger.forEach(pirate => {
-//     console.log(
-//       `Name: ${pirate.name} \n Power: ${pirate.power} \n Secret Weapon: ${pirate.secretWeapon}`
-//     )
-//   })
+//   const lucy = new Cat('Lucy', 6, 'Female')
+//   console.log(lucy)
+//   lucy.eat()
+//   lucy.birthday()
+//   lucy.takesNap()
   
 //   console.log('\n')
+  
+
+//example 2
+class Pirate {
+    constructor(name, power, secretWeapon) {
+    this.name = name
+    this.power = power
+    this.secretWeapon = secretWeapon
+    this.takesSoul = false
+    }
+  
+    getsHit() {
+    console.log(
+    `${this.name} was just hit and their power is ${(this.power -= 10)}`
+      )
+    }
+  
+    powerUp() {
+    console.log(`${this.name} just powered up to ${(this.power += 10)}`)
+    }
+  
+    soulSnatched() {
+    this.takesSoul = true
+    console.log(`${this.takesSoul && "Just took someone's soul"}`)
+    }
+  }
+  
+  const jollyRoger = [
+    new Pirate('Jax The Ripper', 100, 'Machete with poison'),
+    new Pirate('Wave Crasher', 90, 'Controller of water'),
+    new Pirate('Crazy Pirate', 93, 'Paralizes with his thoughts'),
+  ]
+  
+  jollyRoger[0].powerUp()
+  
+  jollyRoger.forEach(pirate => {
+    console.log(
+      `Name: ${pirate.name} \n Power: ${pirate.power} \n Secret Weapon: ${pirate.secretWeapon}`
+    )
+  })
+  
+  console.log('\n')
 
 
 //Example 3 -didnt finsish
@@ -174,74 +174,4 @@
 // Governor.fundRaiser(10)
 
 //example 2
-
-//singleton// 
-
-// class Me {
-//   constructor (name){
-//     this.name= name;
-//     this.age = 0;
-//     this.height = 0;
-//     this.weight = 0;
-//     this.mood = 0;
-//     this.hamsters = [''];
-//     this.bankAccount= 0;
-
-//   }
-// getName (){
-//   return this.name
-// }
-
-// getAge (){
-//   return this.age
-// }
-
-// getWeight(){
-//   return this.weight
-// }
-
-// greet(){
-//   console.log ('Hello' + this.getName(name))
-// }
-
-// eat (){
-//  this.weight++
-//  this.mood++
-// }
-// exercise(){
-// this.weight--
-// }
-
-// ageUp(){
-//   this.age++
-//   this.
-// }
-
-// }
-
-
-//Chef Make Dinners //
-
-class Dinner {
-  constructor (appetizer, entree, dessert ){
-    this.appetizer = appetizer;
-    this.entree = entree;
-    this.dessert = dessert;
-  }
-
-}
-  class Chef {
-    creatDinner(appetizer, entree, dessert){
-      const newDinner = newDinner (appetizer, entree, dessert);
-      return newDinner;
-    }
-    
-  }
-  const newChef = new Chef ();
-  const dinner = newChef.creatDinner('French Fries', 'Pizza', 'Ice Cream');
-  console.log(dinner);
-  console.log(dinner);
-  console.log(dinner);
-  
-
 
