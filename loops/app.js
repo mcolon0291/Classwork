@@ -84,13 +84,54 @@
 //  }
 
  //Exercise 9
-let i= 0
+// let i= 0
+// while (i <= 20){ 
+//  if(i %2 == 0){
+//  console.log (i*3)
+// }
+// i ++
+// }
 
-while (i < 60){ 
-console.log(i) 
-if ( i % 2 ==0){
-    i *= 3
-}else {
-    continue;
+//Exercise 10
+// let num= 1
+// while (num <= 20){
+// if( num == 2){
+// console.log(num)
+// } else if ( num == 3){
+// console.log (num)
+// }
+// if(num %2!= 0 && num %3!= 0){
+// console.log (num)
+// }
+// num ++
+// }
+
+Bonus Exercise 
+
+let num5 = 10
+let coins = 0
+while (num5 > 4) {
+    console.log((coins += 4))
+    num5 --
 }
-}
+console.log('final', coins)
+
+
+
+
+// for (let i = 1; i<=3; i++){
+//     let str= ''
+//     for (let j =1; j <= i; j++){
+//         str += j
+//     }
+//     console.log (str)
+
+
+
+/* 
+1. Initialize the variable
+2. checks if i (1) is less than or equal to 3 (true)
+3. initialize the variable string as a blank string
+4.initialize the variable j to 1
+5. checks if j (1) is less than or equal i (1) (true)
+6. concateencates 1 as a string to the 

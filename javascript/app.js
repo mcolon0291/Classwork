@@ -158,7 +158,7 @@ if (lighting === 'dark'){
 
 // Exercise 2 - Terenayr Operator
 
-   let number = 3; 
+//    let number = 3; 
 
-   oddEven = number % 2 === 0 ? "It is even" : "It is odd";
-   console.log(oddEven);
+//    oddEven = number % 2 === 0 ? "It is even" : "It is odd";
+//    console.log(oddEven);
