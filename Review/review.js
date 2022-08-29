@@ -293,6 +293,7 @@
 
 //Objects
 //A- 1-2
+<<<<<<< HEAD
 // let user = {
 //   name: "Marleni",
 //   email: "mcolon0291@gmail.com", 
@@ -398,3 +399,110 @@
 
 // //4-
 // console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1,cat2))))
+=======
+let user = {
+  name: "Marleni",
+  email: "mcolon0291@gmail.com", 
+  age: "31",
+  purchased: []
+}
+
+// //B- without changing the orginial user object, update the email value to a new email.
+user.email = "marlenicolon@yahoo.com"
+user.age++
+console.log(user)
+
+// //C- add a new key location to the object and give it a string value
+user.location = "New York"
+console.log(user)
+
+// //D1-adding value to the purchase array using push method
+user.purchased.push("carbohydrates")
+
+// //D2- adding peace of mind value to purchae array using push method
+user.purchased.push("peace of mind")
+
+// //D3- adding Merino jodhpurs using push method
+user.purchased.push("merino jodhpurs")
+
+// //D4-console log (merino jodhpurs)
+console.log(user.purchased[2])
+
+// //E1 -Write a friend object and give friend name, location, purchased array
+user.friend = {
+    name: "Isaiah",
+    age: 2,
+    location: "New York",
+    purchased: [],
+}
+// //E2- console log friends name
+console.log(user.friend.name)
+
+// //E3- console log friend location 
+console.log(user.friend.location)
+
+// //E4 - change friends age to 55
+user.friend.age = 55
+
+// //E5- using push method add the ring one to purchased array
+user.friend.purchased.push("The One Ring")
+
+// //E6- using push method add a latte to purchased array
+user.friend.purchased.push("A latte")
+
+// //E7- console log only a latte
+console.log(user.friend.purchased[1])
+
+// //F1-  write for loop for user array
+for (let i = 0; i < user.purchased.length; i++){
+    console.log(user.purchased[i])
+}
+
+// //F2- write for loop for friend array
+for (let j = 0; j < user.friend.purchased.length; j++){
+    console.log(user.friend.purchased[j])
+}
+//G1-3
+function upDateUser(){
+    user.age++;
+    user.name.toUpperCase();
+}
+
+//G2- 
+function oldAndLoud(person)  {
+ console.log(person.age++);
+console.log(person.name.toUpperCase());
+}
+oldAndLoud(user)
+
+// Cat Combinator
+//1-Mama cat
+ let cat1 = {
+    name: "Henry", 
+    breed: "Ragdoll", 
+    age: 12,
+ }
+console.log(cat1.age)
+console.log(cat1.breed)
+
+//2- Papa cat
+let cat2 = {
+    name: "Bret",
+    breed: "Persian",
+    age: 13,
+}
+
+//3- Combine cats
+function combineCats(cat1, cat2){
+let twoCats ={
+    age: 1,
+    name: cat1. name + cat2. name,
+    breed: cat1. breed + "-" + cat2. breed
+};
+return twoCats;
+}
+console.log(combineCats(cat1, cat2));
+
+//4-
+console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1,cat2))))
+>>>>>>> c5b8abce86f8397e03e700bdc2b924f389f7a97b
