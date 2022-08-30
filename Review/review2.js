@@ -63,41 +63,96 @@ const favMovies = [
 'Howls Moving Castle',
 'Django Unchained '
 ]
-// 1 
-favMovies.sort()
-console.log(favMovies)
-// the .sort method put the elements in alphabetical order by the first character of each element.
+// // 1 
+// favMovies.sort()
+// console.log(favMovies)
+// // the .sort method put the elements in alphabetical order by the first character of each element.
 
-// //2
-favMovies.pop()
-console.log(favMovies)
-//the pop method removed the last element of the array (removed "the fellowship of the ring")
+// // //2
+// favMovies.pop()
+// console.log(favMovies)
+// //the pop method removed the last element of the array (removed "the fellowship of the ring")
 
-// //3 
-favMovies.push('Guardians of the Galaxy')
-console.log(favMovies)
+// // //3 
+// favMovies.push('Guardians of the Galaxy')
+// console.log(favMovies)
 
-// //4 
-favMovies.reverse()
-console.log(favMovies)
+// // //4 
+// favMovies.reverse()
+// console.log(favMovies)
 
-// //5
-favMovies.shift()
-console.log(favMovies)
+// // //5
+// favMovies.shift()
+// console.log(favMovies)
 
-//6
-favMovies.unshift()
-console.log(favMovies)
-//does not return anything unless something is in the parentheses
+// // //6
+// // favMovies.unshift('Princess and the Pauper');
+// // console.log(favMovies)
+// // //returns the new length of array
 
-//7
-
-
-
-
-
-
+// //7
+// console.log(favMovies.indexOf('Django Unchained'))
+// console.log(favMovies.splice(favMovies.indexOf('Django Unchained'),1,"Avatar",))
+// console.log(favMovies.length)
+// //Splice permanently alters the array
 
 
-////////Where is Waldo///////
+// //8
 
+// console.log(favMovies)
+// let afterSlice=favMovies.slice(Math.floor((favMovies.length)/2))
+// //does not alters the original array permanently
+
+// //9
+// console.log(afterSlice)
+
+// //10 
+// console.log(favMovies)
+
+// //11
+// console.log(afterSlice.indexOf('Fast and Furious'))
+
+// //12
+// // if you want the array to be mutated, declare it with const.
+// // if you want the array to get reassigned, declare it with let.
+
+// ////////Where is Waldo///////
+
+// //where is waldo
+// const whereIsWaldo =[['Timmy','Frank'],'Eggbert',['Lucinda','Jacc','Neff','Snoop'],['Petunia',['Baked Goods','Waldo']]]
+
+//  whereIsWaldo.splice(1,1)
+// //   console.log(whereIsWaldo)
+
+//   whereIsWaldo[1][2]='No One'
+// console.log(whereIsWaldo)
+
+// console.log(whereIsWaldo[2][1][1])
+
+
+//////////////Excited kitten/////////////
+for (let i = 0; i < 20; i++) {
+    console.log(`Love me,pet me!HSSSSSS!`)
+}
+//random message
+let array=['..human...why you taking pictures of me?...','...the catnip made me do it...','...why does the red dot always get away...']
+for (let i = 0; i < 20; i++) {
+    if ( i %2  ===0 ) console.log (`${array[Math.floor(Math.random() * array.length)]}`)
+        else console.log(`Love me,pet me!HSSSSSS!`)
+}
+
+///find the median////
+const nums=[14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12]
+
+const sorted = nums.sort((a, b) => a - b);
+
+console.log(sorted)
+let median
+let middle = Math.floor(sorted.length/2)
+for (let i = 0; i < sorted.length;i++) {
+if (sorted.length %2 === 0 ){
+   median=(sorted[middle]+sorted[middle+1])/2
+}else {
+    median =sorted[middle]
+}}
+console.log(median)
