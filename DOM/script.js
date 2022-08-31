@@ -64,3 +64,17 @@ topMenuEl.addEventListener("click", function(a) {
   subMenuEl.style.top = "0";
   return;
 });
+
+//5.4
+ for (i = 0; i < topMenuLinks.length; i++){
+topMenuLinks[i].classList.remove('active')
+ }
+
+ //5.5
+ evt.target.classList.add('active')
+
+//5.6
+
+if(evt.target.text != 'about'){
+  showingSubMenu = true
+}
