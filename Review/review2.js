@@ -156,3 +156,64 @@ if (sorted.length %2 === 0 ){
     median =sorted[middle]
 }}
 console.log(median)
+
+/////Return of the Closets/////
+
+const kristynsCloset = [
+    "left shoe",
+    "cowboy boots",
+    "right socks",
+    "GA hoodie",
+    "green pants",
+    "yellow knit hats",
+    "marshmallow peeps",
+  ];
+  const thomsCloset = [
+    [
+      "grey button-up",
+      "dark gery button-up",
+      "light blut button-up",
+      "blue button-up",
+    ],
+    ["grey jeans", "jeans", "PJs"],
+    ["wool mittens", "wool scarf", "raybans"],
+  ];
+  
+  ///////Alien Attire////////
+  kristynsShoe = kristynsCloset[0];
+  
+  //Adding left shoe to thom's closet
+  thomsCloset[2].push(kristynsShoe);
+  console.log(thomsCloset);
+
+////Dress Us Up///////
+//1.
+for (let i = 0; i < 3; i++) {
+    console.log(
+      `Krystin is wearing a ${
+        kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]
+      }, ${
+        kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]
+      } and ${kristynsCloset[Math.floor(Math.random() * kristynsCloset.length)]}`
+    );
+  }
+
+  for(let i=0;i<thomsCloset.length;i++){
+    let index1= Math.floor(Math.random() * thomsCloset.length);
+  console.log(`Thom is wearing a ${thomsCloset[index1][Math.floor(Math.random() * thomsCloset[index1].length)]} , 
+      ${thomsCloset[index1][Math.floor(Math.random() * thomsCloset[index1].length)]
+    } and ${thomsCloset[index1][Math.floor(Math.random() * thomsCloset[index1].length)]}`
+  );
+}
+
+/////Dirty Laundry////
+for (const cloth of kristynsCloset) {
+    console.log(`WHIRR: Now washing ${cloth}`);
+  }
+
+  ////Inventory///
+  for (let i = 0; i < thomsCloset.length; i++) {
+    for (let j = 0; j < thomsCloset[i].length; j++) {
+      console.log(thomsCloset[i][j]);
+    }
+  }
