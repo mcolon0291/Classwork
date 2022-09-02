@@ -49,7 +49,7 @@ div.classList.add('blog-post', 'purple');
 const h1 = document.createElement('h1');
 h1.textContent = "New York";
 const p = document.createElement('p');
-p.textContent = " I love this City";
+p.textContent = " I LOVE THIS CITY!";
 div.appendChild(h1);
 div.appendChild(p);
 // console.log(div)
@@ -57,11 +57,17 @@ const key = document.querySelector('.main')
 key.appendChild(div)
 
     // Part 8
-
-
+let quote = document.querySelector('#quote-title')
+quote.addEventListener('click', event =>{
+    randomQuote()
+})
     // Part 9
+let allPost = document.querySelectorAll('.blog-post')
+forEach(allPost.addEventListener('mouseout', event => {
+    classList.toggle('purple');
+}
+ )
+)
+  }
 
-
-
-
-  });
+);
