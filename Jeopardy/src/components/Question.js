@@ -1,28 +1,22 @@
-import { useState } from 'react';
-import Info from './Info';
-import Reveal from './Reveal';
-import Score from './Score';
-
-export default function Question () {
-
-
-    let [question, setQuestion] = useState("")
-
-    const getQuestion = async () => {
-        const response = await fetch('http://jservice.io/api/random')
-        const data = await response.json()
-        setQuestion(data)
+export default function Question ({question}) {
+    
+    function loadingQuestion () {
+        return(
+            <>
+            <h1>Loading Question...</h1>
+            </>
+        )
     }
-
-    return(
-        <div className="question">
-            <Score question={question} />
-            <h2 className ="play"> Let's Play</h2>
-
-            <button onClick ={getQuestion}> Get Question</button>
-            <Info question = {question} />
-            <Reveal question = {question} />
-        </div>
-    )
+    function loadedQuestion() {
+        return(
+            <>
+            <h2> <span>Catergory:</span> {question.category.title.toString()}</h2>
+            <h2> <span>Value:</span> {question.value}</h2>
+            <h1> <span>Answer:</span> {question.question} </h1>
+            </>
+        )  
+    }
+    
+    return question ? loadedQuestion() : loadingQuestion()
 }
 

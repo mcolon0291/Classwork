@@ -1,33 +1,29 @@
-import React, { useState } from 'react';
+import {useState} from 'react'
 
-export default function Score ({question}){
-
-    let quest = question[0]
-
-    let[score, setScore] = useState(0)
-
-    const increaseScore = (e) => {
-        setScore(score + quest.value)
-        e.preventDefault()
+export default function Score ({question}) {
+    const [score , setScore] = useState(0)
+    function increaseScore() {
+        setScore(score + question.value)
     }
-    const decreaseScore = (e) => {
-        setScore(score - quest.value)
-        e.preventDefault()
+    function decreaseScore() {
+        if (score - question.value <= 0){
+          setScore(0)  
+        } else {
+            setScore(score - question.value)
+        }
+        
     }
-
-    const resetScore = (e) => {
-        setScore(score - score)
-        e.preventDefault()
+    function scoreReset() {
+        setScore(0)
     }
-
-    return(
-        <div> 
-            <h1 className='score'>Score: {score}</h1>
-            <form>
-                <button className= 'decrease' onClick ={decreaseScore}> Decrease</button>
-                <button className= 'increase' onClick={increaseScore}>Increase</button>
-                <button onClick={resetScore}>Reset</button>
-            </form>
+     return(
+        <>
+        <h1>Current Score: {score} </h1>
+        <div id='scorebuttons'>
+            <button id='increaseScore' onClick={increaseScore}>Add Points</button>
+            <button id='decreaseScore' onClick={decreaseScore}>Deduct Points</button>
+            <button id='resetscore' onClick={scoreReset}> Reset </button>
         </div>
+        </>
     )
 }
